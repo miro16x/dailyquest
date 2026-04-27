@@ -1,0 +1,44 @@
+DailyQuest - a daily coding and puzzle challenge platform.
+
+Summary:
+Primary Request and Intent:
+   The user invoked the `/animated-website` skill with a fully detailed brief to build: 
+   **DailyQuest** — a daily coding and puzzle challenge platform. 
+   Key requirements:
+   - **Site name:** 
+        - DailyQuest
+   - **Purpose:** 
+        - Daily coding, logic, and puzzle challenges with streak tracking, leaderboard, difficulty levels (easy/medium/hard), AI-powered hints, user accounts
+   - **Style:** 
+        - Modern, playful, engaging; light mode; neon blue (#0ea5e9) accents; subtle gradients
+   - **Sections:** 
+        - Hero, Daily Challenge, Categories, Leaderboard, Streak Tracker, How It Works, Login/Signup, Footer
+   - **Hero:** 
+        - Adapt the canvas-based animated component from `components/prompt_trivia.txt` 
+        — spring-physics mouse-trailing lines in neon blue range (hue offset 210, amplitude 30), badge pill "New Challenge Today", bordered title box with corner Plus icons, radial gradient mask, live green pulse indicator, CTA buttons "Start Today's Challenge" and "View Leaderboard"
+   - **Mid-pipeline user correction:** 
+        - "Use the components_trivia.txt prompt for the Hero Component" — meaning use the exact canvas.tsx/demo.tsx code from that file as the foundation, not the 21st.dev-generated output
+   - Output: 
+        - Single self-contained HTML file with no build step, Tailwind CDN, vanilla JS, fully responsive, scroll-animated
+
+Implemented Project Brief:
+DailyQuest is a static single-page browser game built in dailyquest/index.html. It is designed as a daily challenge hub where players can practice coding, answer trivia, solve logic puzzles, earn points, and watch their score move on a simulated live leaderboard.
+
+The main game modes are:
+- Code Sprint: a JavaScript coding editor with daily seeded challenges, runnable test cases, hints, reset, submit, timer, and point scoring.
+- Trivia Rush: a timed 10-question trivia game with category selection for mixed, tech, science, sports, history, geography, movies, and music.
+- Logic Lock: daily seeded quick puzzles covering deduction, sequences, ciphers, patterns, and ordering constraints.
+
+Code Sprint currently includes 12 rotating JavaScript challenges across three subject areas:
+- Coding: Two Sum, Contains Duplicate, Reverse Words, FizzBuzz, Chunk Array, Balanced Brackets, and Binary Search.
+- Math: Prime Factors and Triangle Number.
+- Science: Gravity Drop, Classify pH, and DNA Complement.
+
+The page also includes:
+- A responsive animated hero section with a daily countdown and scroll cue.
+- Game cards for Trivia Rush, Code Sprint, and Logic Lock.
+- A simulated live leaderboard that updates over time and awards points when challenges are solved.
+- A simple account form for login and account creation messaging.
+- Visual effects including reveal animations, particles, cursor trail, and confetti.
+
+DailyQuest is fully client-side and uses CDN assets for Tailwind CSS, Google Fonts, and Material Symbols. It does not require a backend or package install for local preview; open dailyquest/index.html in a browser.
